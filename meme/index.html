@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;800&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meme Picker</title>
+  </head>
+  <body>
+
+    <header>
+      <div class="header-inner">
+        <h1>Meme Picker</h1>
+      </div>
+    </header>
+
+    <main class="body">
+      <h3>Pick your mood from the list</h3>
+      <div class="controls-container">
+
+        <div class="emotion-radios" id="emotion-radios"></div>
+
+        <div class="gifs-check">
+          <label for="gifs-only-option" class="gifs-only-option">Animated GIFs only</label>
+          <input type="checkbox" id="gifs-checkbox">
+        </div>
+
+        <button class="get-image-btn" id="get-img-btn">Get Image</button>
+
+      </div>
+    </main>
+
+      <div class="modal">
+        <button class="modal-close-btn" id="modal-close-btn">X</button>
+        <div id="modal-inner"></div>
+      </div>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
