@@ -17,15 +17,17 @@
       </div>
     </header>
 
-    <main class="body">
+    <main>
       <h3>Pick your mood from the list</h3>
       <div class="controls-container">
 
-        <div class="emotion-radios" id="emotion-radios"></div>
+        <div class="emotion-radios" id="emotion-radios">
+          <!-- radio emotions rendered here -->
+        </div>
 
         <div class="gifs-check">
-          <label for="gifs-only-option" class="gifs-only-option">Animated GIFs only</label>
-          <input type="checkbox" id="gifs-checkbox">
+          <label for="gifs-only-option" class="gifs-check-label">Animated GIFs only</label>
+          <input type="checkbox" id="gifs-only-option">
         </div>
 
         <button class="get-image-btn" id="get-img-btn">Get Image</button>
@@ -33,11 +35,13 @@
       </div>
     </main>
 
-      <div class="modal">
-        <button class="modal-close-btn" id="modal-close-btn">X</button>
-        <div id="modal-inner"></div>
+      <div class="meme-modal" id="meme-modal">
+        <button class="meme-modal-close-btn" id="meme-modal-close-btn">X</button>
+        <div id="meme-modal-inner">
+          <!-- display image here!! -->
+        </div>
       </div>
 
-    <script type="module" src="/main.js"></script>
+    <script type="module" src="main.js"></script>
   </body>
 </html>
